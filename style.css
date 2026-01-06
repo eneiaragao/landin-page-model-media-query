@@ -1,0 +1,625 @@
+
+                    /*VARIAVEIS*/
+:root{
+    --primary-color:hwb(226 4% 84%);
+    --white:#FFFFFF;
+    --light-gray-color:#eeee;
+    --gap:3rem;
+    --margin:2rem;
+    --secund-cor:lab(25.57% 10.19 -30.53);
+    
+/*crio variaveis para usar dentro de elemento*/
+}
+   
+                 /*ELEMENTOS*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    line-height: 1.5;
+}
+h1, h2, h3, h4, h5,h6{
+    font-family:'Montserrat',sans-serif;
+}
+
+
+
+h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+    
+
+}
+h2{
+    font-size: 5.5rem;
+    margin-bottom:4rem; 
+    text-transform: uppercase;
+    line-height: 1;
+   
+}
+h3{
+    font-size: 4.5rem;
+    
+}
+h4{
+    font-size: 4rem;
+   
+}
+h5{
+    font-size: 3.5rem;
+}
+h6{
+    font-size: 3rem;
+    
+}
+p{
+    margin-bottom: 3rem;
+}
+
+                 /*CLASSES*/
+
+.main-bg{
+    font-family:'Open Sans',sans-serif;
+    font-size: 1.6rem;
+    background-image: url(img/main-bg.svg);
+    background-size:cover ;
+    background-position: center center;
+    color: var(--white);
+}
+.white-bg{
+    background:var(--white);
+    color: var(--primary-color);
+}
+
+
+                /*menu*/
+
+
+.menu{
+    
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 0.2rem solid var(--light-gray-color);
+    z-index: 1;
+    
+}
+.main-content{
+    max-width: 120rem;
+    margin:0 auto ;
+    padding:var(--gap);
+
+    
+}
+
+.menu-contente{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+
+.meu-link{
+    
+    display: flex;
+    justify-content:space-between;
+    
+
+}
+.meu-link ul{
+    
+  text-decoration: none;
+    
+
+}
+.menu-spacing{
+    height: 6.5rem;
+
+}
+
+    /*estilizando os menus /com  houver*/
+
+
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    border-bottom: 0.3rem solid crimson;
+    transition: all 300ms ease-in-out;
+}
+.menu ul li a:hover::after{
+    width: 50%;
+    left: 25%;
+    
+}
+.menu h1{
+    font-size: 2.3rem;
+        
+
+}
+
+
+
+         /*estilizando os links  /com  houver*/
+.menu ul li a{
+    display: block;
+    color: var(--primary-color);
+    padding: 1rem;
+    font-family:'Montserrat',sans-serif;
+    font-size: 1.8rem;
+    position: relative;
+    
+}
+
+
+
+        
+
+
+.section{
+    min-height: 100vh;/*altura minima do vilport*/
+   
+    
+}
+
+
+/*pagina intro*/
+
+.intro-content{
+    position: relative;
+   /* top:-8rem;*/
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap:var(--gap);
+    height: 100vh;
+
+}
+.intro-text-content, .intro-img{
+ display: flex;
+ flex-flow: column wrap;
+ justify-content: center;
+}
+
+.intro-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+                    /* segunda sessão*/
+     .top3-content{
+        max-width: 120rem;
+        display: flex;
+        flex-flow: column wrap;
+        min-height: 100vh;
+        justify-content: center;
+        text-align: center;
+
+     }          
+     
+                    /* terceira sessão*/
+
+     /*.galery-one-content{
+      display: flex;
+      flex-flow: column wrap;
+      height: 100vh;
+      justify-content: center;
+
+     }   */
+    .galery-one-content {
+    display: flex;
+    flex-direction: column; /* Remova o 'wrap' para não criar colunas laterais */
+    min-height: 100vh;      /* Use min-height em vez de height fixo */
+    justify-content: center;
+    /* Adicione as linhas abaixo para garantir o alinhamento central */
+    max-width: 120rem;      /* Mesma largura do seu main-content */
+    margin: 0 auto;         /* Centraliza o container na tela */
+    padding: var(--gap);    /* Espaçamento interno igual às outras seções */
+    overflow: hidden;/* Garante que nada "escape" para fora */
+}            
+      
+    /* .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:var(--gap);
+        margin: var(--margin);
+        counter-reset: gride-counter;
+     }*/
+
+     .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem; /* Reduzi um pouco o gap para sobrar mais espaço */
+    flex-grow: 1; /* Faz o grid ocupar o espaço restante */
+    align-content: center; /* Centraliza as linhas do grid verticalmente */
+}
+     .grid-main-heading, .grid-description{
+        margin: var(--margin);
+
+     }
+
+     .grid h3{
+        font-size: 3rem;
+        position: relative;
+        padding-left: 5rem;
+        padding-bottom: 3rem;
+     }
+     .grid p{
+        margin: var(--margin);
+     }
+
+     .grid h3::before{
+        counter-increment:gride-counter;
+        content: counter(gride-counter);
+        position: absolute;
+        font-size: 8rem;
+        font-style: italic;
+        top: -3rem;
+        left: 0;
+        transform: rotate(5deg);
+
+     }
+
+                    /*pagina galery*/
+
+     /*.gallery-img{
+        width: 100%;
+        max-width: 36rem;
+        max-height: 36rem;
+        overflow: hidden;
+
+     }*/
+
+    .gallery-img {
+    width: 100%;
+    height: 100%; /* Faz a div da imagem preencher o espaço do grid */
+    max-height: 35vh; /* Limita a altura para que 2 linhas caibam na tela (25+25 = 50vh) */
+    overflow: hidden;
+}
+     .gallery-img img{
+        width: 100%;
+    height: 100%;
+    object-fit: cover; /* Corta a imagem para preencher o quadrado sem deformar */
+    transition: all 300ms ease-in-out;
+     }
+     .gallery-img img:hover{
+        transform: translate(-3%,3%) scale(1.2) rotate(5deg);
+     }
+     
+                 /*pagina da tabela*/
+
+    table{
+        width: 100%;
+        min-width: 36rem;
+        border-collapse: collapse;
+    }
+
+    table td, table th{
+        border:0.2rem solid var(--light-gray-color);
+       
+
+
+    }
+    table caption{
+        text-align:left;
+         text-transform:uppercase;
+         
+    }
+    .responsive{
+        overflow: hidden;
+        overflow-x: auto;
+
+    }
+
+    
+                
+                   /*pagina do contact*/
+    .text-contact{
+        margin-top: 30px;
+    }
+    .contact-form{
+        grid-column: span 2;/*espande a img para as duas colunas*/
+
+
+    }
+    .contact-form .form-grid{/* estiliza o formulario (fildset)*/
+        border: none;/*tira a borda do form*/
+        display: flex;/*Função: Ativa o modo Flexbox. Sem isso, as próximas três linhas não funcionariam. Ele transforma o elemento em um "container flexível", permitindo que os itens 
+        filhos (como os inputs do formulário) sejam alinhados facilmente.*/
+        flex-direction: row;/*Define a direção dos itens. O valor row (linha) faz com que os campos do formulário fiquem um ao lado do outro (horizontalmente).
+         Se fosse column, ficariam um embaixo do outro.*/
+        flex-wrap: wrap;/*É o "quebra-mola" do layout. Ele permite que, se não houver espaço suficiente na largura para todos os itens ficarem na mesma linha, os itens restantes
+         pulem para a linha de baixo automaticamente. Isso é essencial para que o formulário funcione bem em celulares.*/
+        gap: var(--gap);
+    }
+    input, textarea {
+    padding: 1.5rem ;
+    border: 1px solid lab(88.51% -16.71 82.08);
+    border-radius: 0.9rem;
+    background-color:var(--white);
+    
+
+}
+    
+.form-grid .form-group {
+    /* O 'flex: 1 1 300px' diz: 
+       "Tente crescer, tente encolher, mas comece com 300px de largura" 
+    */
+    flex: 1 1 30rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.4rem;
+
+}
+
+
+div.full-width{
+    width: 100%;
+    flex: 1 1 100%;
+}
+/* Garante que o container da mensagem ocupe 100% da largura */
+.form-grid .form-group.full-width {
+    flex: 1 1 100%;
+}
+
+/* Ajuste no botão para ele não tentar flutuar */
+.form-grid .form-group:has(button) {
+    flex: 1 1 100%; /* Faz o container do botão também ocupar a 
+    largura total se necessário */
+}
+
+button {
+    text-align: center; /* Centraliza o texto dentro do botão */
+    width: 20rem;
+    padding: 1.5rem;
+    background-color: crimson; /* Cor de destaque */
+    color: var(--white);
+    border: none;
+    border-radius: 0.9rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+button:hover {
+    background-color: #a0102b; /* Efeito ao passar o mouse */
+
+}
+.form-grid legend{
+    font-style: italic;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    
+
+}
+.form-group input:focus,
+.form-group textarea:focus{/*coloca efeito nos input e texarea*/
+    box-shadow: 0 0 5px 5px red;
+     
+}
+
+/*FOOTER */
+
+.footer {
+    width: 100%;
+    background: var(--white);
+    margin-top: auto; /* Truque do Flexbox: empurra o elemento para o fim do container */
+}
+
+/* Reutilizando sua classe de container para manter o alinhamento */
+.footer .main-content {
+    padding-top: var(--gap);
+    padding-bottom: var(--gap);
+}
+
+/* Remove margens extras do parágrafo que podem causar espaços em branco indesejados */
+.footer p {
+    margin-bottom: 0;
+    padding: 2rem 0;
+}
+
+.footer a {
+    color:#444;
+    font-size: 1.6rem;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa no mínimo a altura da tela */
+    justify-content: space-between; /* Empurra o conteúdo para cima e o footer para baixo */
+}
+#contact .footer {
+    grid-column: span 2; /* Faz o footer atravessar as duas colunas do seu grid */
+    width: 100%;
+}
+
+.intro-content2{
+    flex-grow: 1; 
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+   
+
+}
+.heart{
+    color: #a0102b;
+   
+
+}
+.fig{
+   height:4rem ;
+    font-size: 3rem;
+
+}
+ .close-menu{
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left:0;
+        display: none;
+    }
+
+                                  /*BOTAO DO TOP*/
+    .back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--white);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0.2rem solid var(--primary-color);
+    font-size: 2.5rem;
+    text-decoration: none;
+    z-index: 10;
+    transform: rotate(-90deg); /* Faz a seta apontar para cima */
+    transition: all 300ms ease-in-out;
+}
+
+.back-to-top:hover {
+    background-color: crimson;
+    color: var(--white);
+    border-color: crimson;
+    transform: rotate(-90deg) scale(1.1);
+}
+
+                                /* Esconde o botão em telas muito pequenas se desejar ou ajuste o tamanho */
+@media (max-width: 800px) {
+    .back-to-top {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+
+
+
+                    /*media query / responsividade para celular*/
+@media(max-width:800px){
+    .intro-content, .grid{
+        grid-template-columns: 1fr;
+    }
+    .gallery-img{
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        
+    }
+    .gallery-img img{
+        width: 100%;
+    }
+    galery-one-content {
+        display: block;
+    }
+
+    .menu{
+        bottom: 0;
+        text-align: center;
+    }
+    .menu-contente, .menu-contente ul {
+        flex-direction: column;
+        
+        justify-content: center;
+        
+
+    }
+    .menu-contente{
+        height: 100vh;
+
+    }
+    .menu{
+        display: none;
+    }
+   
+    .close-menu-label::after{
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background-color: var(--primary-color);
+        color: var(--white);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+        
+    }
+    /**/
+    .close-menu:checked~.menu{/*quando clica no menu aparece o display*/
+        display: block;
+    }
+    /*depois que abre o menu aparece o x que é para fechar e abrir o menu opção novamente*/
+    
+    .close-menu:checked~.close-menu-label::after{/*quando clica no menu aparece o display*/
+        display: block;
+        content: '×';
+    }
+    
+    h2{
+          font-size: 3rem;
+          margin-bottom:2rem; 
+          text-transform: uppercase;
+          color: red;
+          
+
+    }
+    .responsive p{
+        grid-column: 1fr;
+        color: red;
+    }
+    .tabela-paragrafo{
+        padding: 0;
+        max-width: 100%;
+    }
+.tabela-paragrafo p{
+    margin: 1.5rem;
+    margin-bottom: 3rem;
+}
+    .main-content{
+    margin-left: 3rem;
+    padding:1rem;
+
+    
+}
+}

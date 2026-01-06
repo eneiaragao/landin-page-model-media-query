@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+</head>
+
+<body class="main-bg" id="intro">
+<!-- implementando o menu responsivo para celular -->
+ <input id="close-menu" class="close-menu"
+ type="checkbox" aria-label="Close menu"
+ role="button">
+ <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+
+ 
+
+    <aside class="menu white-bg">
+        <div class="main-content menu-contente">
+
+            <h1 onclick="getElementById('close-menu').checked=false"><a href="#home">LOGO</a> </h1>
+            <nav> 
+                <!-- aqui quando clica na opçao do menu ele vai para a pg escolhida -->
+                <ul onclick="getElementById('close-menu').checked=false" class="meu-link">
+                    <li> <a href="#intro">Intro</a></li>
+                    <li> <a href="#top3">Top 3</a></li>
+                    <li> <a href="#grid3">Grid3</a></li>
+                    <li> <a href="#gallery">Gallery</a></li>
+                    <li> <a href="#work">Work</a></li>
+                    <li> <a href="#table">Table</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section class="section  main-bg">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>january brings us firefox 85 </h2>
+                <p>Criar um site ideal, com o design perfeito é importante para empresas, corporações e até startups
+                    melhorarem sua presença digital.
+
+                    Para isso, existem diversos templates prontos para uso, que podem ser uma fonte poderosa para a
+                    construção do seu site.</p>
+            </div>
+            <div class="intro-img">
+                <img src="img/javascript-not-optimized.svg" alt="logo de html css e js">
+            </div>
+        </div>
+
+    </section>
+
+    <div class="menu-spacing"></div>
+
+
+    <section class="section white-bg" id="top3">
+        <div class="main-content top3-content">
+
+            <h2>Top 3 Job</h2>
+            <p>
+                O jornalismo é uma prática profissional que se dedica à coleta,
+                investigação, análise e disseminação de informações sobre
+                eventos, acontecimentos e questões relevantes para a sociedade. É uma das formas mais importantes de
+                comunicação, desempenhando um papel fundamental na democracia ao fornecer ao público informações
+                objetivas e verificadas sobre o mundo ao seu redor.
+            </p>
+            <p>O curso de Jornalismo é uma graduação com titulação de
+                bacharelado e duração de quatro anos. Ao longo dos oito
+                semestres, o estudante é preparado para dominar os meios de
+                comunicar-se por textos ou de forma oral, e também para contar
+                e descrever um fato com clareza para todos os tipos de público
+                por intermédio de portais de internet, rádio, TV, jornais e
+                revistas. Confira mais informações sobre Jornalismo e conte
+                com o Educa Mais Brasil para entender se
+                esse curso combina com você por meio do teste vocacional.</p>
+
+
+        </div>
+    </section>
+
+
+
+
+    <section id="grid3" class="galery  main-bg section">
+        <div class="galery-one-content">
+            <h2 class="grid-main-heading">grid3 Jobs</h2>
+            <p class="grid-description">Uma breve descrição</p>
+
+            <div class="grid">
+                <article>
+                    <h3> Grid 1</h3>
+                    <p> O estudante é preparado para dominar os meios de
+                        comunicar-se por textos ou de forma oral, e também para contar
+                        e descrever um fato com clareza para todos os tipos de público
+                        por intermédio de portais de internet, rádio, TV, jornais e
+                        revistas. Confira mais informações sobre Jornalismo e conte
+                        com o Educa Mais Brasil para entender se
+                        esse curso combina com você por meio do teste vocacional</p>
+                </article>
+
+                <article>
+                    <h3> Grid 2</h3>
+
+                    <p> O estudante é preparado para dominar os meios de
+                        comunicar-se por textos ou de forma oral, e também para contar
+                        e descrever um fato com clareza para todos os tipos de público
+                        por intermédio de portais de internet, rádio, TV, jornais e
+                        revistas. Confira mais informações sobre Jornalismo e conte
+                        com o Educa Mais Brasil para entender se
+                        esse curso combina com você por meio do teste vocacional</p>
+                </article>
+                <article>
+                    <h3>Grid 3</h3>
+
+                    <p> O estudante é preparado para dominar os meios de
+                        comunicar-se por textos ou de forma oral, e também para contar
+                        e descrever um fato com clareza para todos os tipos de público
+                        por intermédio de portais de internet, rádio, TV, jornais e
+                        revistas. Confira mais informações sobre Jornalismo e conte
+                        com o Educa Mais Brasil para entender se
+                        esse curso combina com você por meio do teste vocacional</p>
+                </article>
+            </div>
+
+        </div>
+    </section>
+  
+
+
+    <section id="gallery" class="section white-bg">
+        <div class="galery-one-content">
+            <h2 class="grid-main-heading">Galery</h2>
+            <p class="grid-description">Uma breve descrição</p>
+
+            <div class="grid">
+
+                <div class="gallery-img" >
+                    
+                    <img src="https://loremflickr.com/360/360/dog?r=1" alt="Cão Aleatório">
+                </div>
+
+                <div class="gallery-img" >
+                    
+                    
+                         <img  src="https://loremflickr.com/360/360/dog?r=2" alt="Cão Aleatório">
+                  
+                </div>
+
+                <div class="gallery-img" >
+                    
+                        
+                          <img  src="https://loremflickr.com/360/360/dog?r=3" alt="Cão Aleatório">
+                    
+                </div>
+                <div class="gallery-img" >
+                    
+                        
+                          <img  src="https://loremflickr.com/360/360/dog?r=4" alt="Cão Aleatório">
+                    
+                </div>
+                <div class="gallery-img" >
+                    
+                        
+                          <img  src="https://loremflickr.com/360/360/dog?r=5" alt="Cão Aleatório">
+                    
+                </div>
+                <div class="gallery-img" >
+                    
+                        
+                          <img  src="https://loremflickr.com/360/360/dog?r=6" alt="Cão Aleatório">
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="work" class="galery  main-bg section">
+        <div class="galery-one-content">
+            <h2 class="grid-main-heading">grid3 Jobs</h2>
+            <p class="grid-description">Uma breve descrição</p>
+
+            <div class="grid">
+                <article>
+                    <h3> Grid 1</h3>
+                    <p> O estudante é preparado para dominar os meios de
+                        comunicar-se por textos ou de forma oral, e também para contar
+                        e descrever um fato com clareza para todos os tipos de público
+                        por intermédio de portais de internet, rádio, TV, jornais e
+                        revistas. Confira mais informações sobre Jornalismo e conte
+                        com o Educa Mais Brasil para entender se
+                        esse curso combina com você por meio do teste vocacional</p>
+                </article>
+
+                <article>
+                    <h3> Grid 2</h3>
+
+                    <p> O estudante é preparado para dominar os meios de
+                        comunicar-se por textos ou de forma oral, e também para contar
+                        e descrever um fato com clareza para todos os tipos de público
+                        por intermédio de portais de internet, rádio, TV, jornais e
+                        revistas. Confira mais informações sobre Jornalismo e conte
+                        com o Educa Mais Brasil para entender se
+                        esse curso combina com você por meio do teste vocacional</p>
+                </article>
+                <article>
+                    <h3>Grid 3</h3>
+
+                    <p> O estudante é preparado para dominar os meios de
+                        comunicar-se por textos ou de forma oral, e também para contar
+                        e descrever um fato com clareza para todos os tipos de público
+                        por intermédio de portais de internet, rádio, TV, jornais e
+                        revistas. Confira mais informações sobre Jornalismo e conte
+                        com o Educa Mais Brasil para entender se
+                        esse curso combina com você por meio do teste vocacional</p>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+
+     
+        
+
+
+    <section id="table" class="section white-bg" >
+        <div class="main-content top3-content responsive">
+
+            
+            <div class="tabela-paragrafo">
+                <h2>Pricing</h2>
+            <p >
+                O jornalismo é uma prática profissional que se dedica à coleta,
+                investigação, análise e disseminação de informações sobre
+                eventos, acontecimentos e questões relevantes para a sociedade. É uma das formas mais importantes de
+                comunicação, desempenhando um papel fundamental na democracia ao fornecer ao público informações
+                objetivas e verificadas sobre o mundo ao seu redor.
+            </p>
+            <p>O curso de Jornalismo é uma graduação com titulação de
+                bacharelado e duração de quatro anos. Ao longo dos oito
+                semestres, o estudante é preparado para dominar os meios de
+                comunicar-se por textos ou de forma oral, e também para contar
+                e descrever um fato com clareza para todos os tipos de público
+                por intermédio de portais de internet, rádio, TV, jornais e
+                revistas. Confira mais informações sobre Jornalismo e conte
+                com o Educa Mais Brasil para entender se
+                esse curso combina com você por meio do teste vocacional.</p>
+                
+
+               <div class="responsive">
+                <table>
+                    <caption>Pricing table</caption>
+
+                    <thead> 
+                        <tr>
+                        <th>Title 1</th>
+                        <th>Title 2</th>
+                        <th>Title 3</th>
+                        <th>Title 1</th>
+                        <th>Title 2</th>
+                        <th>Title 3</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>testando</td>
+                        </tr>
+                    </tfoot>
+                   
+
+                </table>
+                </div>
+                </div>
+        </div>
+    </section>
+
+     <section id="contact" class="section  main-bg">
+        <div class="main-content intro-content2">
+            <div class="intro-text-content ">
+                <h2 class="text-contact">january brings us firefox 85 </h2>
+                <p>Criar um site ideal, com o design perfeito é importante para empresas, corporações e até startups
+                    melhorarem sua presença digital.
+
+                    Para isso, existem diversos templates prontos para uso, que podem ser uma fonte poderosa para a
+                    construção do seu site.</p>
+            </div>
+            <div class="intro-img">
+                <img src="img/javascript.svg" alt="logo de html css e js">
+            </div>
+
+            <div class="contact-form">
+            <fieldset class="form-grid">  <!-- aqui inicia o formulario -->
+                <legend>Contact me</legend>
+                <div class="form-group">
+                    <label for="first-name">First name</label>
+                    <input placeholder="Digite seu nome" type="text" name="first-name" id="first-name" >
+
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last name</label>
+                    <input placeholder="Digite seu sobrenome" type="text" name="last-name" id="last-name" >
+
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input placeholder="Digite seu email" type="email" name="email" id="email" >
+
+                </div>
+                <div class="form-group full-width" >
+                    <label for="message">Messagem</label>
+                   <textarea placeholder="Digite sua mensagem" name="message" id="message" cols="30" rows="10"></textarea>
+
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send Message</button>
+                </div>
+
+            </fieldset>
+                
+        </div>
+
+
+         
+
+
+     
+        </div>
+
+       <footer id="footer" class="footer white-bg">
+        <div class="main-content">
+            <p>
+                <a rel="nofollow" target="_blank" href="https://www.threads.com/@eneias3">
+                    Feito com <span class="heart">❤</span>  por Enéias Aragão <span class="fig">🪂</span>
+                </a>
+
+               
+            </p>
+        </div>
+        
+    </footer>
+        
+    </section>
+ 
+ <a href="#intro" class="back-to-top" title="Voltar ao topo">➤</a>
+ 
+</body>
+
+
+
+</html>
